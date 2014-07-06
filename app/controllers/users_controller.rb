@@ -72,6 +72,7 @@ before_action :signed_in_user,
 
     # Before filters
 
+    # этот блок перемещен в  app/helpers/sessions_helper.rb
     #def signed_in_user
     #  unless signed_in?
     #    store_location
