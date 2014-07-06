@@ -45,6 +45,22 @@ describe "Authentication" do
         it { should_not have_link('Settings') }
       end
     end
+
+    # тесты на очистку сессии
+    describe "test of clean session" do
+      let(:user) { FactoryGirl.create(:user) }
+      before { sign_in user }
+
+      describe "test of singin" do
+        before { visit signin_path }
+        it { should_not have_link('Profile',     href: user_path(user)) }
+      end
+
+      describe "test of singnup" do
+        before { visit signup_path }
+        it { should_not have_link('Profile',     href: user_path(user)) }
+      end
+    end
   end
 
   describe "authorization" do
