@@ -24,3 +24,6 @@ doc/
 .DS_Store # For Mac OS
 .idea
 .secret
+.ruby-gemset
+.ruby-version
+/nbproject/**
