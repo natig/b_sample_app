@@ -11,16 +11,17 @@ gem 'bootstrap-will_paginate', '0.0.9'
 
 group :development, :test do
   gem 'sqlite3', '1.3.8'
-  gem 'rspec-rails', '2.13.1'
-  gem 'guard-rspec', '2.5.0'
+  gem 'rspec-rails', '~> 3.0.0'
+  gem 'guard-rspec', '~> 4.2.10'
   gem 'spork-rails', '4.0.0'
   gem 'guard-spork', '1.5.0'
+  #gem 'minitest', '~> 5.1'
   gem 'childprocess', '0.5.3'
 end
 
 group :test do
   gem 'selenium-webdriver', '2.35.1'
-  gem 'capybara', '2.1.0'
+  gem 'capybara', '2.2.0'
   gem 'libnotify', '0.8.0'
   gem 'factory_girl_rails', '4.2.1'
   gem 'cucumber-rails', '1.4.0', :require => false
