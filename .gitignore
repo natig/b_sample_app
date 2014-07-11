@@ -24,3 +24,4 @@ doc/
 .DS_Store # For Mac OS
 .idea
 .secret
+bundler_stubs/
